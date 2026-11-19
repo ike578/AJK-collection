@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Georgia, serif;
+    background-color: #e6e1e8;
+    padding: 30px 15px;
+    color: white;
+}
+
+/* FLYER */
+.flyer {
+    max-width: 700px;
+    min-height: 1000px;
+    margin: auto;
+    background: linear-gradient(135deg, #260026, #100010, #4b004b);
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* BRAND */
+.brand {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.brand h1 {
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.brand-name {
+    font-size: 45px;
+    color: #ff1493;
+    font-style: italic;
+    letter-spacing: 12px;
+    margin-top: -15px;
+}
+
+.tagline {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #fff4cc;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* INTRODUCTION */
+.intro h2 {
+    background-color: #ff1493;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.intro p {
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-bottom: 35px;
+}
+
+/* PRODUCTS */
+.products h2 {
+    display: inline-block;
+    background-color: #ff1493;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.products ul {
+    list-style: none;
+}
+
+.products li {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.products li::before {
+    content: "●";
+    color: #ff1493;
+    margin-right: 15px;
+}
+
+/* GALLERY */
+/* MAIN CONTENT LAYOUT */
+.intro,
+.products {
+    max-width: 55%;
+}
+
+/* GALLERY */
+.gallery {
+    position: absolute;
+    top: 280px;
+    right: 35px;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ff1493;
+    border-radius: 25px;
+}
+
+/* CONTACT */
+
+.contact {
+    margin-top: 45px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact h2 {
+    background-color: #ff1493;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.contact a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact a:hover {
+    color: #ff1493;
+}
+
+.contact p {
+    font-size: 22px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .flyer {
+        padding: 20px;
+    }
+
+    .brand h1 {
+        font-size: 45px;
+    }
+
+    .brand-name {
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+
+    .tagline {
+        position: static;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .intro h2 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .products li {
+        font-size: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+    @media (max-width: 600px) {
+
+    .intro,
+    .products {
+        max-width: 100%;
+    }
+
+    .gallery {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+
+}
+}
