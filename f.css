@@ -154,7 +154,6 @@ body {
 .contact p {
     font-size: 22px;
 }
-
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
 
@@ -181,6 +180,11 @@ body {
         margin-top: 15px;
     }
 
+    .intro,
+    .products {
+        max-width: 100%;
+    }
+
     .intro h2 {
         font-size: 18px;
     }
@@ -194,20 +198,6 @@ body {
     }
 
     .gallery {
-        width: 100%;
-    }
-
-    .gallery img {
-        height: 250px;
-    }
-    @media (max-width: 600px) {
-
-    .intro,
-    .products {
-        max-width: 100%;
-    }
-
-    .gallery {
         position: static;
         width: 100%;
         margin-top: 30px;
@@ -217,5 +207,22 @@ body {
         height: 250px;
     }
 
+    .contact {
+        margin-top: 30px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
 }
+@media (max-width: 600px) {
+    /* other styles */
+
+    @media (max-width: 600px) {
+        /* more styles */
+    }
 }
+.contact a {
+    display: block;
+}
+
